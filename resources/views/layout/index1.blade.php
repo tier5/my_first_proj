@@ -42,7 +42,7 @@ li a:hover:not(.active) {
 <li><a href="#contact">Work</a></li>
 <li><a href="#contact">Testimonials</a></li>
 <li><a href="{{ URL::to('/reg') }}">sign up</a></li>
-<li><a href="#contact">login</a></li>
+<li><a href="{{ URL::to('/log')}}">login</a></li>
   <li style="float:right"><a class="active" href="#about">About</a></li>
 </ul>
  

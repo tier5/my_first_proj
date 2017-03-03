@@ -22,6 +22,24 @@ Route::get('/reg', function () {
    create'); 
 
   Route::post('/store','MemberController@store');
+   Route::get('/show','MemberController@show');
+
+   Route::get('/log', function () {
+    return view('layout.login');
+})->name('log');
+
+   Route::get('/show', function () {
+    return view('layout.show');
+})->name('show');
+
+
+     Route::get('/auth','AuthenticateController@auth'); 
+
+        Route::get('/showlog', function () {
+    return view('layout.showlog');
+})->name('showlog');
+   
+
 
 
 

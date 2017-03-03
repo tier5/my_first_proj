@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,5 +16,3 @@ you are successfully registered
 	@endif 
 </body>
 </html>
-
-

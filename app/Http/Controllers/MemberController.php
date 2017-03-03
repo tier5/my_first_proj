@@ -36,14 +36,16 @@ class MemberController extends Controller
      */
     public function store(Request $request)
     {
-       
+       dd($request);
         $user = new Member;
         $user->firstname = $request->firstname;
         $user->lastname = $request->lastname;
         $user->email = $request->email;
         $user->password = $request->password;
         $user->save();
-        return redirect()->route('layout.show'); 
+        //return redirect()->route('show'); 
+       
+        return view("layout.show");
         
 
     }
@@ -56,7 +58,11 @@ class MemberController extends Controller
      */
     public function show($id)
     {
-        //
+        $firstname = $request->firstname;
+        $lastname = $request->lastname;
+        $email = $request->email;
+    echo"<br>".$firstname."<br>".$lastname."<br>".$email;
+    exit;
     }
 
     /**
